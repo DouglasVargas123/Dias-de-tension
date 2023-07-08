@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ObjectController : MonoBehaviour
 {
     [SerializeField] private string ItemName;
 
-    [TextArea] [SerializeField] private string itemextraInfo;
+    [TextArea] [SerializeField] private string itemExtraInfo;
 
     [SerializeField] private InspectController inspectController;
 
@@ -22,6 +23,6 @@ public class ObjectController : MonoBehaviour
 
     public void ShowExtraInfo()
     {
-        inspectController.ShowAdditionalInfo(itemextraInfo);
+        inspectController.ShowAdditionalInfo(itemExtraInfo);
     }
 }

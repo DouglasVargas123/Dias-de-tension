@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Fidel Castro
   m_EditorClassIdentifier: 
   speakerName: Fidel Castro
-  textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 1}
+  textColor: {r: 0.9254902, g: 0.06666667, b: 0.066666655, a: 1}
+  Imagen: {fileID: 0}

@@ -17,7 +17,7 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
   - text: Puedo colocar mas texto si es necesario
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
-  - text: asdasd
+  - text: Dialogo 3
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
   - text: asdasdasd
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
@@ -25,5 +25,9 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
   - text: zzcxxxxxxxxxxxxxx
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: zzcxxxxxxxxxxxxxx
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: zzcxxxxxxxxxxxxxx
+    speaker: {fileID: 11400000, guid: 480c1b0c832d0ea47abd64c67afd462a, type: 2}
   background: {fileID: 21300000, guid: d66ad759adff9f443b50778ee5a7af2a, type: 3}
   nextScene: {fileID: 11400000, guid: 1e71858a1fc27bb4d86472e57b0948cf, type: 2}

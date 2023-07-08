@@ -23,7 +23,11 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: 480c1b0c832d0ea47abd64c67afd462a, type: 2}
   - text: y ahora habla habla otra persona
     speaker: {fileID: 11400000, guid: ea35ca57523791f4e912d405ac231ce6, type: 2}
-  - text: 
+  - text: adsasd
+    speaker: {fileID: 11400000, guid: ff2746fed7e99a945b0a23108fda4c8a, type: 2}
+  - text: sdas
+    speaker: {fileID: 11400000, guid: ff2746fed7e99a945b0a23108fda4c8a, type: 2}
+  - text: sdas
     speaker: {fileID: 11400000, guid: ff2746fed7e99a945b0a23108fda4c8a, type: 2}
   background: {fileID: 21300000, guid: f0d62524182280d4c8bbb5be30fa3a97, type: 3}
   nextScene: {fileID: 0}

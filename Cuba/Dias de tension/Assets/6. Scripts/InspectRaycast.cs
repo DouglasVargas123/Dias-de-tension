@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class InspectRaycast : MonoBehaviour
 {
-    [SerializeField] private int rayLenght = 30;
+    private int rayLenght = 6;
     [SerializeField] private string  targetTag = "Interact";
     private ObjectController raycastedObj;
 
@@ -17,8 +17,9 @@ public class InspectRaycast : MonoBehaviour
     {
         RaycastHit hit;
         Vector3 fdw = transform.TransformDirection(Vector3.forward);
+        Debug.DrawRay(transform.position, fdw * rayLenght, Color.red);
 
-        if(Physics.Raycast(transform.position,fdw, out hit, rayLenght))
+        if (Physics.Raycast(transform.position,fdw, out hit, rayLenght))
         {
             if (hit.collider.CompareTag(targetTag))
             {
@@ -31,7 +32,7 @@ public class InspectRaycast : MonoBehaviour
                 isCrosshairActive = true;
                 doOnce = true;
 
-                if (Input.GetKeyDown(0))
+                if (Input.GetMouseButtonDown(0))
                 {
                     raycastedObj.ShowExtraInfo();
                 }

@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: John F. Kennedy
   m_EditorClassIdentifier: 
   speakerName: John F. Kennedy
-  textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 1}
+  textColor: {r: 0.9254902, g: 0.06666667, b: 0.066666655, a: 1}
+  Imagen: {fileID: 0}
