@@ -22,6 +22,7 @@ public class BottomBarController : MonoBehaviour
     public GameObject Castro;
     public GameObject Nikita;
     public GameObject Barco;
+    public GameObject CamaraImagen;
 
     public bool Camara = false;
 
@@ -105,6 +106,7 @@ public class BottomBarController : MonoBehaviour
             Castro.SetActive(false);
             Nikita.SetActive(false);
             Barco.SetActive(false);
+            CamaraImagen.SetActive(false);
         }
         else if(personNameText.text == "Fidel Castro")
         {
@@ -112,6 +114,7 @@ public class BottomBarController : MonoBehaviour
             Castro.SetActive(true);
             Nikita.SetActive(false);
             Barco.SetActive(false);
+            CamaraImagen.SetActive(false);
         }
         else if (personNameText.text == "Nikita Jrushchov")
         {
@@ -119,6 +122,7 @@ public class BottomBarController : MonoBehaviour
             Castro.SetActive(false);
             Nikita.SetActive(true);
             Barco.SetActive(false);
+            CamaraImagen.SetActive(false);
         }
         else if (personNameText.text == "Barco")
         {
@@ -126,9 +130,15 @@ public class BottomBarController : MonoBehaviour
             Castro.SetActive(false);
             Nikita.SetActive(false);
             Barco.SetActive(true);
+            CamaraImagen.SetActive(false);
         }
         else if (personNameText.text == "Camara")
         {
+            Kennedy.SetActive(false);
+            Castro.SetActive(false);
+            Nikita.SetActive(false);
+            Barco.SetActive(false);
+            CamaraImagen.SetActive(true);
             Camara = true;
         }
 
