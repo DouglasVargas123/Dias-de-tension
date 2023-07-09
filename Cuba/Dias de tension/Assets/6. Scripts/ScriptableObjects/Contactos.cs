@@ -8,6 +8,7 @@ using UnityEngine;
 public class Contactos : ScriptableObject
 {
     public string nombre;
+    public Color textColor;
     public string numero;
     public int[] numeroInt;
 }
