@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: "2. Alejandro Fern\xE1ndez"
   m_EditorClassIdentifier: 
   nombre: "Alejandro Fern\xE1ndez"
+  textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 0}
   numero: 195-181
   numeroInt: 010000000900000005000000010000000800000001000000

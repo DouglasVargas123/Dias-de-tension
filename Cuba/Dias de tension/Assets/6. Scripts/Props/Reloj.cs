@@ -31,9 +31,7 @@ public class Reloj : MonoBehaviour
     }
     public IEnumerator Tiempo()
     {
-        Debug.Log("Se inicio");
         yield return new WaitWhile(() => bottomBar.Camara == false);
-        Debug.Log("A");
         UIHORA.text = "12:30";
         yield return new WaitForSecondsRealtime(Intervalo);
         UIHORA.text = "13:00";

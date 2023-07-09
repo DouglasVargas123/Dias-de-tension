@@ -14,6 +14,9 @@ public class Phone : MonoBehaviour
     public int[] digitos;
     public TextMeshProUGUI[] Numero;
 
+    public BottomBarController2 bottomBarController2;
+    public GameController2 gameController2;
+
 
     public void AbrirTelefono()
     {
@@ -183,7 +186,9 @@ public class Phone : MonoBehaviour
     {
         if (digitos[0] == contactos[0].numeroInt[0] && digitos[1] == contactos[0].numeroInt[1] && digitos[2] == contactos[0].numeroInt[2] && digitos[3] == contactos[0].numeroInt[3] && digitos[4] == contactos[0].numeroInt[4] && digitos[5] == contactos[0].numeroInt[5])
         {
-            Debug.Log(contactos[0].nombre);
+            bottomBarController2.PlayScene(gameController2.currentScene);
+            gameController2.inCall = true;
+            phoneUI.SetActive(false);
         }
         if (digitos[0] == contactos[1].numeroInt[0] && digitos[1] == contactos[1].numeroInt[1] && digitos[2] == contactos[1].numeroInt[2] && digitos[3] == contactos[1].numeroInt[3] && digitos[4] == contactos[1].numeroInt[4] && digitos[5] == contactos[1].numeroInt[5])
         {

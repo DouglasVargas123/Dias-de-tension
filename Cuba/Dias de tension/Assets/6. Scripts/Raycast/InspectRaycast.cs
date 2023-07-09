@@ -18,6 +18,7 @@ public class InspectRaycast : MonoBehaviour
     public Carta carta;
     [Header("Phone")]
     public Phone phone;
+    public GameController2 gameController2;
     [Header("Reloj")]
     public Reloj reloj;
     private void Update()
@@ -30,32 +31,35 @@ public class InspectRaycast : MonoBehaviour
         {
             if (!carta.inCarta | !phone.inPhone)
             {
-                if (hit.collider.CompareTag(targetTag))
+                if (!gameController2.inCall)
                 {
-                    if (!doOnce)
+                    if (hit.collider.CompareTag(targetTag))
                     {
-                        raycastedObj = hit.collider.gameObject.GetComponent<ObjectController>();
-                        raycastedObj.ShowObjectName();
-                        CrosshairChange(true);
-                    }
-                    isCrosshairActive = true;
-                    doOnce = true;
+                        if (!doOnce)
+                        {
+                            raycastedObj = hit.collider.gameObject.GetComponent<ObjectController>();
+                            raycastedObj.ShowObjectName();
+                            CrosshairChange(true);
+                        }
+                        isCrosshairActive = true;
+                        doOnce = true;
 
-                    if (Input.GetMouseButtonDown(0) && hit.collider.transform.name == "Tv")
-                    {
-                        raycastedObj.ShowExtraInfo();
-                    }
-                    if (Input.GetMouseButtonDown(0) && hit.collider.transform.name == "Carta")
-                    {
-                        carta.AbrirCarta();
-                    }
-                    if (Input.GetMouseButtonDown(0) && hit.collider.transform.name == "Phone")
-                    {
-                        phone.AbrirTelefono();
-                    }
-                    if (Input.GetMouseButtonDown(0) && hit.collider.transform.name == "Clock")
-                    {
-                        reloj.ShowAdditionalInfoReloj();
+                        if (Input.GetMouseButtonDown(0) && hit.collider.transform.name == "Tv")
+                        {
+                            raycastedObj.ShowExtraInfo();
+                        }
+                        if (Input.GetMouseButtonDown(0) && hit.collider.transform.name == "Carta")
+                        {
+                            carta.AbrirCarta();
+                        }
+                        if (Input.GetMouseButtonDown(0) && hit.collider.transform.name == "Phone")
+                        {
+                            phone.AbrirTelefono();
+                        }
+                        if (Input.GetMouseButtonDown(0) && hit.collider.transform.name == "Clock")
+                        {
+                            reloj.ShowAdditionalInfoReloj();
+                        }
                     }
                 }
             }

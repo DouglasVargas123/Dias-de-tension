@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: 1. Adriana Vega
   m_EditorClassIdentifier: 
   nombre: Adriana Vega
+  textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 0}
   numero: 205-172
   numeroInt: 020000000000000005000000010000000700000002000000

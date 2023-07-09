@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: 9. Sebastian Flores 1
   m_EditorClassIdentifier: 
   nombre: Margarita Ortega
+  textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 0}
   numero: 121-182
   numeroInt: 010000000200000001000000010000000800000002000000

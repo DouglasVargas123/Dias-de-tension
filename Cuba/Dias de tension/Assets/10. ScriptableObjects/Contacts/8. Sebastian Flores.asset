@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: 8. Sebastian Flores
   m_EditorClassIdentifier: 
   nombre: "Sebasti\xE1n Flores"
+  textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 0}
   numero: 471-812
   numeroInt: 040000000700000001000000080000000100000002000000
