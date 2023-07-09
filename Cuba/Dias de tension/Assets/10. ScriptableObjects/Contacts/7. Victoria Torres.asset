@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 053840f51f65146419b3f4f676040e12, type: 3}
-  m_Name: Adriana Vega
+  m_Name: 7. Victoria Torres
   m_EditorClassIdentifier: 
-  nombre: Adriana Vega
-  numero: 999-999
-  numeroInt: 090000000900000009000000090000000900000009000000
+  nombre: Victoria Torres
+  numero: 872-111
+  numeroInt: 080000000700000002000000010000000100000001000000

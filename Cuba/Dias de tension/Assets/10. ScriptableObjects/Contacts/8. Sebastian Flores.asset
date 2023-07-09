@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 053840f51f65146419b3f4f676040e12, type: 3}
-  m_Name: "Alejandro Fern\xE1ndez"
+  m_Name: 8. Sebastian Flores
   m_EditorClassIdentifier: 
-  nombre: "Alejandro Fern\xE1ndez"
-  numero: 555-555
-  numeroInt: 050000000500000005000000050000000500000005000000
+  nombre: "Sebasti\xE1n Flores"
+  numero: 471-812
+  numeroInt: 040000000700000001000000080000000100000002000000

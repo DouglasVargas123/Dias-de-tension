@@ -10,9 +10,10 @@ public class Phone : MonoBehaviour
     public GameObject UINormal;
 
     [Header("Numeros")]
-    public Contactos contactos;
+    public Contactos[] contactos;
     public int[] digitos;
     public TextMeshProUGUI[] Numero;
+
 
     public void AbrirTelefono()
     {
@@ -34,111 +35,175 @@ public class Phone : MonoBehaviour
 
     public void BotonArriba0()
     {
-        digitos[0] = digitos[0] + 1;
-        Numero[0].text = digitos[0].ToString();
-        if(digitos[0] >= 9)
+        if (digitos[0] <= 9 && digitos[0] >= 0)
         {
-            digitos[0] = -1;
+            digitos[0] = digitos[0] + 1;
+            if (digitos[0] > 9)
+            {
+                digitos[0] = 0;
+            }
+            Numero[0].text = digitos[0].ToString();
         }
     }
     public void BotonArriba1()
     {
-        digitos[1] = digitos[1] + 1;
-        Numero[1].text = digitos[1].ToString();
-        if (digitos[1] > 9)
+        if (digitos[1] <= 9 && digitos[1] >= 0)
         {
-            digitos[1] = 0;
+            digitos[1] = digitos[1] + 1;
+            if (digitos[1] > 9)
+            {
+                digitos[1] = 0;
+            }
+            Numero[1].text = digitos[1].ToString();
         }
     }
     public void BotonArriba2()
     {
-        digitos[2] = digitos[2] + 1;
-        Numero[2].text = digitos[2].ToString();
-        if (digitos[2] > 9)
+        if (digitos[2] <= 9 && digitos[2] >= 0)
         {
-            digitos[2] = 0;
+            digitos[2] = digitos[2] + 1;
+            if (digitos[2] > 9)
+            {
+                digitos[2] = 0;
+            }
+            Numero[2].text = digitos[2].ToString();
         }
     }
     public void BotonArriba3()
     {
-        digitos[3] = digitos[3] + 1;
-        Numero[3].text = digitos[3].ToString();
-        if (digitos[3] > 9)
+        if (digitos[3] <= 9 && digitos[3] >= 0)
         {
-            digitos[3] = 0;
+            digitos[3] = digitos[3] + 1;
+            if (digitos[3] > 9)
+            {
+                digitos[3] = 0;
+            }
+            Numero[3].text = digitos[3].ToString();
         }
     }
     public void BotonArriba4()
     {
-        digitos[4] = digitos[4] + 1;
-        Numero[4].text = digitos[4].ToString();
-        if (digitos[4] > 9)
+        if (digitos[4] <= 9 && digitos[4] >= 0)
         {
-            digitos[4] = 0;
+            digitos[4] = digitos[4] + 1;
+            if (digitos[4] > 9)
+            {
+                digitos[4] = 0;
+            }
+            Numero[4].text = digitos[4].ToString();
         }
     }
     public void BotonArriba5()
     {
-        digitos[5] = digitos[5] + 1;
-        Numero[5].text = digitos[5].ToString();
-        if (digitos[5] > 9)
+        if (digitos[5] <= 9 && digitos[5] >= 0)
         {
-            digitos[5] = 0;
+            digitos[5] = digitos[5] + 1;
+            if (digitos[5] > 9)
+            {
+                digitos[5] = 0;
+            }
+            Numero[5].text = digitos[5].ToString();
         }
     }
 
     public void BotonAbajo0()
     {
-        digitos[0] = digitos[0] - 1;
-        Numero[0].text = digitos[0].ToString();
-        if(digitos[0] <= 0)
+        if (digitos[0] <= 9 && digitos[0] >= 0)
         {
-            digitos[0] = 10;
+            digitos[0] = digitos[0] - 1;
+            if (digitos[0] < 0)
+            {
+                digitos[0] = 9;
+            }
+            Numero[0].text = digitos[0].ToString();
         }
     }
     public void BotonAbajo1()
     {
-        digitos[1] = digitos[1] - 1;
-        Numero[1].text = digitos[1].ToString();
-        if (digitos[1] <= 0)
+        if (digitos[1] <= 9 && digitos[1] >= 0)
         {
-            digitos[1] = 10;
+            digitos[1] = digitos[1] - 1;
+            if (digitos[1] < 0)
+            {
+                digitos[1] = 9;
+            }
+            Numero[1].text = digitos[1].ToString();
         }
     }
     public void BotonAbajo2()
     {
-        digitos[2] = digitos[2] - 1;
-        Numero[2].text = digitos[2].ToString();
-        if (digitos[2] <= 0)
+        if (digitos[2] <= 9 && digitos[2] >= 0)
         {
-            digitos[2] = 10;
+            digitos[2] = digitos[2] - 1;
+            if (digitos[2] < 0)
+            {
+                digitos[2] = 9;
+            }
+            Numero[2].text = digitos[2].ToString();
         }
     }
     public void BotonAbajo3()
     {
-        digitos[3] = digitos[3] - 1;
-        Numero[3].text = digitos[3].ToString();
-        if (digitos[3] <= 0)
+        if (digitos[3] <= 9 && digitos[3] >= 0)
         {
-            digitos[3] = 10;
+            digitos[3] = digitos[3] - 1;
+            if (digitos[3] < 0)
+            {
+                digitos[3] = 9;
+            }
+            Numero[3].text = digitos[3].ToString();
         }
     }
     public void BotonAbajo4()
     {
-        digitos[4] = digitos[4] - 1;
-        Numero[4].text = digitos[4].ToString();
-        if (digitos[4] <= 0)
+        if (digitos[4] <= 9 && digitos[4] >= 0)
         {
-            digitos[4] = 10;
+            digitos[4] = digitos[4] - 1;
+            if (digitos[4] < 0)
+            {
+                digitos[4] = 9;
+            }
+            Numero[4].text = digitos[4].ToString();
         }
     }
     public void BotonAbajo5()
     {
-        digitos[5] = digitos[5] - 1;
-        Numero[5].text = digitos[5].ToString();
-        if (digitos[5] <= 0)
+        if (digitos[5] <= 9 && digitos[5] >= 0)
         {
-            digitos[5] = 10;
+            digitos[5] = digitos[5] - 1;
+            if (digitos[5] < 0)
+            {
+                digitos[5] = 9;
+            }
+            Numero[5].text = digitos[5].ToString();
+        }
+    }
+
+    public void LLAMAR()
+    {
+        if (digitos[0] == contactos[0].numeroInt[0] && digitos[1] == contactos[0].numeroInt[1] && digitos[2] == contactos[0].numeroInt[2] && digitos[3] == contactos[0].numeroInt[3] && digitos[4] == contactos[0].numeroInt[4] && digitos[5] == contactos[0].numeroInt[5])
+        {
+            Debug.Log(contactos[0].nombre);
+        }
+        if (digitos[0] == contactos[1].numeroInt[0] && digitos[1] == contactos[1].numeroInt[1] && digitos[2] == contactos[1].numeroInt[2] && digitos[3] == contactos[1].numeroInt[3] && digitos[4] == contactos[1].numeroInt[4] && digitos[5] == contactos[1].numeroInt[5])
+        {
+            Debug.Log(contactos[1].nombre);
+        }
+        if (digitos[0] == contactos[2].numeroInt[0] && digitos[1] == contactos[2].numeroInt[1] && digitos[2] == contactos[2].numeroInt[2] && digitos[3] == contactos[2].numeroInt[3] && digitos[4] == contactos[2].numeroInt[4] && digitos[5] == contactos[2].numeroInt[5])
+        {
+            Debug.Log(contactos[2].nombre);
+        }
+        if (digitos[0] == contactos[3].numeroInt[0] && digitos[1] == contactos[3].numeroInt[1] && digitos[2] == contactos[3].numeroInt[2] && digitos[3] == contactos[3].numeroInt[3] && digitos[4] == contactos[3].numeroInt[4] && digitos[5] == contactos[3].numeroInt[5])
+        {
+            Debug.Log(contactos[3].nombre);
+        }
+        if (digitos[0] == contactos[4].numeroInt[0] && digitos[1] == contactos[4].numeroInt[1] && digitos[2] == contactos[4].numeroInt[2] && digitos[3] == contactos[4].numeroInt[3] && digitos[4] == contactos[4].numeroInt[4] && digitos[5] == contactos[4].numeroInt[5])
+        {
+            Debug.Log(contactos[4].nombre);
+        }
+        if (digitos[0] == contactos[5].numeroInt[0] && digitos[1] == contactos[5].numeroInt[1] && digitos[2] == contactos[5].numeroInt[2] && digitos[3] == contactos[5].numeroInt[3] && digitos[4] == contactos[5].numeroInt[4] && digitos[5] == contactos[5].numeroInt[5])
+        {
+            Debug.Log(contactos[5].nombre);
         }
     }
 }
