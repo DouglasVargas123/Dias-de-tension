@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Nikita Jrushchov
   textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 1}
-  Imagen: {fileID: 0}
+  Imagen: {fileID: 21300000, guid: 2e74c8d338c686842ac3759290b0d731, type: 3}

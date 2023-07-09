@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour
     public Vector2 sens;
     public GameObject UI;
 
+    public Carta carta;
+
 
 
 
@@ -42,7 +44,7 @@ public class GameController : MonoBehaviour
             camera1.fieldOfView = Mathf.Lerp(camera1.fieldOfView, 80, 1f * Time.deltaTime);
             camera2.fieldOfView = Mathf.Lerp(camera2.fieldOfView, 80, 1f * Time.deltaTime);
 
-            if(camera1.fieldOfView > 75 && camera1.fieldOfView < 85)
+            if(camera1.fieldOfView > 75 && camera1.fieldOfView < 85 && carta.inCarta == false)
             {
                 ModoLibre();
                 UI.SetActive(true);
@@ -56,7 +58,6 @@ public class GameController : MonoBehaviour
 
     public void ModoLibre()
     {
-        Cursor.lockState = CursorLockMode.Locked;
         float hor = Input.GetAxis("Mouse X");
         float ver = Input.GetAxis("Mouse Y");
         if (hor != 0)

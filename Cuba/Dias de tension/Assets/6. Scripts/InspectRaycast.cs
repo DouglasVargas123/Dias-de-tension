@@ -13,13 +13,16 @@ public class InspectRaycast : MonoBehaviour
     private bool isCrosshairActive;
     private bool doOnce;
 
+
+    [Header("CARTA UI")]
+    public Carta carta;
     private void Update()
     {
         RaycastHit hit;
         Vector3 fdw = transform.TransformDirection(Vector3.forward);
         Debug.DrawRay(transform.position, fdw * rayLenght, Color.red);
 
-        if (Physics.Raycast(transform.position,fdw, out hit, rayLenght))
+        if (Physics.Raycast(transform.position,fdw, out hit, rayLenght) && carta.inCarta == false)
         {
             if (hit.collider.CompareTag(targetTag))
             {
@@ -32,10 +35,15 @@ public class InspectRaycast : MonoBehaviour
                 isCrosshairActive = true;
                 doOnce = true;
 
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButtonDown(0) && hit.collider.transform.name == "Tv")
                 {
                     raycastedObj.ShowExtraInfo();
                 }
+                if (Input.GetMouseButtonDown(0) && hit.collider.transform.name == "Carta")
+                {
+                    carta.AbrirCarta();
+                }
+
             }
         }
         else

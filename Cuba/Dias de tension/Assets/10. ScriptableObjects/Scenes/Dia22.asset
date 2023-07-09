@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: Dia22
   m_EditorClassIdentifier: 
   sentences:
-  - text: Aca inicia el dia 22 y puedo colocar lo que quiera
+  - text: Buenas noches, ciudadanos estadounidenses. Les hablo hoy con un mensaje
+      de gran importancia y gravedad.
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
-  - text: Puedo colocar mas texto si es necesario
+  - text: "Hace apenas unas horas, hemos descubierto evidencia incontrovertible de
+      que la Uni\xF3n Sovi\xE9tica ha instalado misiles nucleares en la isla de Cuba."
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
-  - text: Dialogo 3
+  - text: "Esta acci\xF3n, inaceptable para Estados Unidos y una amenaza directa
+      a nuestra seguridad nacional, no ser\xE1 tolerada."
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
   - text: asdasdasd
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}

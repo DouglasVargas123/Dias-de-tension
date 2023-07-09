@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Barco
   textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 1}
-  Imagen: {fileID: 0}
+  Imagen: {fileID: 21300000, guid: 6e4912d7f0db7894dbd2c08aadf44d21, type: 3}

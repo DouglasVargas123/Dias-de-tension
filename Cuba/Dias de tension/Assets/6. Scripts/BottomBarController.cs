@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class BottomBarController : MonoBehaviour
 {
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
+    public Image personImage;
 
     private int sentenceIndex = -1;
     public StoryScene currentScene;
@@ -15,20 +17,18 @@ public class BottomBarController : MonoBehaviour
     public GameObject panelInicio;
     public GameObject panelTransicion;
     public GameObject panelPrimeraEscena;
+    public GameObject UI;
 
     public GameController gameController;
 
-    public GameObject Kennedy;
-    public GameObject Castro;
-    public GameObject Nikita;
-    public GameObject Barco;
-    public GameObject CamaraImagen;
+    public GameObject FinTransmision;
 
     public bool Camara = false;
 
 
     public void IniciarTexto()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         PlayScene(gameController.currentScene);
         StartCoroutine(Transicion());
     }
@@ -49,6 +49,7 @@ public class BottomBarController : MonoBehaviour
         StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
+        personImage.sprite = currentScene.sentences[sentenceIndex].speaker.Imagen;
     }
 
     public bool IsCompleted()
@@ -96,50 +97,20 @@ public class BottomBarController : MonoBehaviour
         StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
+        personImage.sprite = currentScene.sentences[sentenceIndex].speaker.Imagen;
     }
 
     public void SwitchImage()
     {
-        if (personNameText.text == "John F. Kennedy")
+
+        if (personNameText.text == "Camara")
         {
-            Kennedy.SetActive(true);
-            Castro.SetActive(false);
-            Nikita.SetActive(false);
-            Barco.SetActive(false);
-            CamaraImagen.SetActive(false);
-        }
-        else if(personNameText.text == "Fidel Castro")
-        {
-            Kennedy.SetActive(false);
-            Castro.SetActive(true);
-            Nikita.SetActive(false);
-            Barco.SetActive(false);
-            CamaraImagen.SetActive(false);
-        }
-        else if (personNameText.text == "Nikita Jrushchov")
-        {
-            Kennedy.SetActive(false);
-            Castro.SetActive(false);
-            Nikita.SetActive(true);
-            Barco.SetActive(false);
-            CamaraImagen.SetActive(false);
-        }
-        else if (personNameText.text == "Barco")
-        {
-            Kennedy.SetActive(false);
-            Castro.SetActive(false);
-            Nikita.SetActive(false);
-            Barco.SetActive(true);
-            CamaraImagen.SetActive(false);
-        }
-        else if (personNameText.text == "Camara")
-        {
-            Kennedy.SetActive(false);
-            Castro.SetActive(false);
-            Nikita.SetActive(false);
-            Barco.SetActive(false);
-            CamaraImagen.SetActive(true);
+            panelPrimeraEscena.SetActive(false);
+            FinTransmision.SetActive(true);
+            UI.SetActive(true);
+            
             Camara = true;
+            
         }
 
     }
