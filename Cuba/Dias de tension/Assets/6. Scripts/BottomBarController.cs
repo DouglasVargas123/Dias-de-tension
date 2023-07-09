@@ -25,12 +25,15 @@ public class BottomBarController : MonoBehaviour
 
     public bool Camara = false;
 
+    public Reloj reloj;
+
 
     public void IniciarTexto()
     {
         Cursor.lockState = CursorLockMode.Locked;
         PlayScene(gameController.currentScene);
         StartCoroutine(Transicion());
+        reloj.StartCoroutine(reloj.Tiempo());
     }
 
     public void Update()
@@ -107,11 +110,8 @@ public class BottomBarController : MonoBehaviour
         {
             panelPrimeraEscena.SetActive(false);
             FinTransmision.SetActive(true);
-            UI.SetActive(true);
-            
-            Camara = true;
-            
+            UI.SetActive(true);           
+            Camara = true;            
         }
-
     }
 }

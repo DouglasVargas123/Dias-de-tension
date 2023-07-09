@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: "Alejandro Fern\xE1ndez"
   numero: 555-555
+  numeroInt: 050000000500000005000000050000000500000005000000

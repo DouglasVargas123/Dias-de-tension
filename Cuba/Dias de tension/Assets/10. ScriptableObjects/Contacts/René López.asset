@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: "Ren\xE9 L\xF3pez"
   numero: 888-888
+  numeroInt: 080000000800000008000000080000000800000008000000

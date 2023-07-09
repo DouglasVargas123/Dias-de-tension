@@ -9,4 +9,5 @@ public class Contactos : ScriptableObject
 {
     public string nombre;
     public string numero;
+    public int[] numeroInt;
 }

@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour
     public GameObject UI;
 
     public Carta carta;
+    public Phone phone;
 
 
 
@@ -44,7 +45,7 @@ public class GameController : MonoBehaviour
             camera1.fieldOfView = Mathf.Lerp(camera1.fieldOfView, 80, 1f * Time.deltaTime);
             camera2.fieldOfView = Mathf.Lerp(camera2.fieldOfView, 80, 1f * Time.deltaTime);
 
-            if(camera1.fieldOfView > 75 && camera1.fieldOfView < 85 && carta.inCarta == false)
+            if(camera1.fieldOfView > 75 && camera1.fieldOfView < 85 && !carta.inCarta && !phone.inPhone)
             {
                 ModoLibre();
                 UI.SetActive(true);
