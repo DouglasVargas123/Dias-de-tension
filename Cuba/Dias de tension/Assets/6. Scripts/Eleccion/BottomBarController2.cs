@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class BottomBarController2 : MonoBehaviour
 {
     public TextMeshProUGUI barText;
     public TextMeshProUGUI personNameText;
+    public Image Foto;
 
     private int sentenceIndex = -1;
     public StoryScene2 currentScene;
@@ -34,11 +36,17 @@ public class BottomBarController2 : MonoBehaviour
         StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
         personNameText.text = currentScene.sentences[sentenceIndex].contactos.nombre;
         personNameText.color = currentScene.sentences[sentenceIndex].contactos.textColor;
+        Foto.sprite = currentScene.sentences[sentenceIndex].contactos.Foto;
     }
 
     public bool IsCompleted()
     {
         return state == State.COMPLETED;
+    }
+
+    public bool IsLastSentense()
+    {
+        return sentenceIndex + 1 == currentScene.sentences.Count;
     }
 
     private IEnumerator TypeText(string text)

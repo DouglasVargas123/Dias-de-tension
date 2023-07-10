@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: "4. Ren\xE9 L\xF3pez"
   m_EditorClassIdentifier: 
   nombre: "Ren\xE9 L\xF3pez"
-  textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 0}
+  textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 1}
   numero: 811-651
   numeroInt: 080000000100000001000000060000000500000001000000

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: 3. Federico Castro
   m_EditorClassIdentifier: 
   nombre: Federico Castro
-  textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 0}
+  textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 1}
   numero: 511-911
   numeroInt: 050000000100000001000000090000000100000001000000

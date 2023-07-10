@@ -11,4 +11,5 @@ public class Contactos : ScriptableObject
     public Color textColor;
     public string numero;
     public int[] numeroInt;
+    public Sprite Foto;
 }

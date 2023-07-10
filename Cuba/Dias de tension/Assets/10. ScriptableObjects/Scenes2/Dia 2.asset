@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Dia 2
   m_EditorClassIdentifier: 
   sentences:
-  - text: Hola mundo!!
+  - text: otras escena
     contactos: {fileID: 11400000, guid: 68d3a81e59cd2734b9a2994340b0c194, type: 2}
-  - text: Hola lol
+  - text: mmm..
     contactos: {fileID: 11400000, guid: 68d3a81e59cd2734b9a2994340b0c194, type: 2}
   background: {fileID: 0}
   nextScene2: {fileID: 0}
