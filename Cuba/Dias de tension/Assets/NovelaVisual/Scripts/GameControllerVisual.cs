@@ -4,20 +4,26 @@ using UnityEngine;
 
 public class GameControllerVisual : MonoBehaviour
 {
-    public StorySceneVisual currentScene;
+    public GameSceneVisual currentScene;
     public BottomBarControllerVisual bottomBar;
     public GameObject Transicion;
+    public ChooseControllerVisual chooseController;
 
     private State state = State.IDLE;
 
     private enum State
     {
-        IDLE,ANIMATE
+        IDLE,ANIMATE,CHOOSE
     }
 
     private void Start()
     {
-        bottomBar.PlayScene(currentScene);
+        if(currentScene is StorySceneVisual)
+        {
+            StorySceneVisual storyScene = currentScene as StorySceneVisual;
+            bottomBar.PlayScene(storyScene);
+
+        }
     }
 
     private void Update()
@@ -28,7 +34,7 @@ public class GameControllerVisual : MonoBehaviour
             {
                 if (bottomBar.IsLastSentence())
                 {
-                    PlayScene(currentScene.nextScene);
+                    PlayScene((currentScene as StorySceneVisual).nextScene);
                 }
                 else
                 {
@@ -40,7 +46,7 @@ public class GameControllerVisual : MonoBehaviour
         }
     }
 
-    private void PlayScene(StorySceneVisual scene)
+    public void PlayScene(GameSceneVisual scene)
     {
         StartCoroutine(SwitchScene(scene));
     }
@@ -53,14 +59,24 @@ public class GameControllerVisual : MonoBehaviour
         yield return null;
     }
 
-    private IEnumerator SwitchScene(StorySceneVisual scene)
+    private IEnumerator SwitchScene(GameSceneVisual scene)
     {
         state = State.ANIMATE;
         currentScene = scene;
         Transicion.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
-        Transicion.SetActive(false);
-        bottomBar.PlayScene(scene);
-        state = State.IDLE;
+        if(scene is StorySceneVisual)
+        {
+            StorySceneVisual storyScene = scene as StorySceneVisual;
+            yield return new WaitForSeconds(0.5f);
+            Transicion.SetActive(false);
+            bottomBar.PlayScene(storyScene);
+            state = State.IDLE;
+        }
+        else if(scene is ChooseSceneVisual)
+        {
+            Transicion.SetActive(false);
+            state = State.CHOOSE;
+            chooseController.SetupChoose(scene as ChooseSceneVisual);
+        }
     }
 }

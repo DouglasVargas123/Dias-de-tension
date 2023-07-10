@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "NewStorySceneVisual",menuName = "DataVisual/ New Story Scene Visual")]
 [System.Serializable]
-public class StorySceneVisual : ScriptableObject
+public class StorySceneVisual : GameSceneVisual //Cambiar al minuto 11:24 a GameSceneVisual
 {
     public List<Sentence> sentences;
     public Sprite background;
-    public StorySceneVisual nextScene;
+    public GameSceneVisual nextScene; //Cambiar al minuto 11:24 a GameSceneVisual
 
     [System.Serializable]
 

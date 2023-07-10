@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9ba043c74469064391cb64ef50aa6ee, type: 3}
-  m_Name: 2
+  m_Name: 1 Scene
   m_EditorClassIdentifier: 
   sentences:
-  - text: Elegi Opcion 1
+  - text: Primera Escena
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
-  background: {fileID: 0}
-  nextScene: {fileID: 0}
+  - text: Segunda Escnea
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  background: {fileID: 21300000, guid: 6b88bf7f36bf1d5418f5c3974ec7e011, type: 3}
+  nextScene: {fileID: 11400000, guid: c23806ca93db0fb4aa1eb891cbb7a9e1, type: 2}
