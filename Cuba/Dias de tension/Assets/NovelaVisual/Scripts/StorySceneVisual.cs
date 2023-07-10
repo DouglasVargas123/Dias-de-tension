@@ -1,15 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
-[CreateAssetMenu(fileName = "NewStoryScene", menuName = "Data/ New Story Scene")]
+[CreateAssetMenu(fileName = "NewStorySceneVisual",menuName = "DataVisual/ New Story Scene Visual")]
 [System.Serializable]
-public class StoryScene : ScriptableObject
+public class StorySceneVisual : ScriptableObject
 {
     public List<Sentence> sentences;
     public Sprite background;
-    public StoryScene nextScene;
+    public StorySceneVisual nextScene;
 
     [System.Serializable]
 
@@ -18,4 +16,9 @@ public class StoryScene : ScriptableObject
         public string text;
         public Speakers speaker;
     }
+}
+
+public class GameSceneVisual: ScriptableObject
+{
+
 }
