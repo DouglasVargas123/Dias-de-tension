@@ -192,23 +192,33 @@ public class Phone : MonoBehaviour
         }
         if (digitos[0] == contactos[1].numeroInt[0] && digitos[1] == contactos[1].numeroInt[1] && digitos[2] == contactos[1].numeroInt[2] && digitos[3] == contactos[1].numeroInt[3] && digitos[4] == contactos[1].numeroInt[4] && digitos[5] == contactos[1].numeroInt[5])
         {
-            Debug.Log(contactos[1].nombre);
+            bottomBarController2.PlayScene(gameController2.currentScene);
+            gameController2.inCall = true;
+            phoneUI.SetActive(false);
         }
         if (digitos[0] == contactos[2].numeroInt[0] && digitos[1] == contactos[2].numeroInt[1] && digitos[2] == contactos[2].numeroInt[2] && digitos[3] == contactos[2].numeroInt[3] && digitos[4] == contactos[2].numeroInt[4] && digitos[5] == contactos[2].numeroInt[5])
         {
-            Debug.Log(contactos[2].nombre);
+            bottomBarController2.PlayScene(gameController2.currentScene);
+            gameController2.inCall = true;
+            phoneUI.SetActive(false);
         }
         if (digitos[0] == contactos[3].numeroInt[0] && digitos[1] == contactos[3].numeroInt[1] && digitos[2] == contactos[3].numeroInt[2] && digitos[3] == contactos[3].numeroInt[3] && digitos[4] == contactos[3].numeroInt[4] && digitos[5] == contactos[3].numeroInt[5])
         {
-            Debug.Log(contactos[3].nombre);
+            bottomBarController2.PlayScene(gameController2.currentScene);
+            gameController2.inCall = true;
+            phoneUI.SetActive(false);
         }
         if (digitos[0] == contactos[4].numeroInt[0] && digitos[1] == contactos[4].numeroInt[1] && digitos[2] == contactos[4].numeroInt[2] && digitos[3] == contactos[4].numeroInt[3] && digitos[4] == contactos[4].numeroInt[4] && digitos[5] == contactos[4].numeroInt[5])
-        {
-            Debug.Log(contactos[4].nombre);
+        {          
+            bottomBarController2.PlayScene(gameController2.currentScene);
+            gameController2.inCall = true;
+            phoneUI.SetActive(false);
         }
         if (digitos[0] == contactos[5].numeroInt[0] && digitos[1] == contactos[5].numeroInt[1] && digitos[2] == contactos[5].numeroInt[2] && digitos[3] == contactos[5].numeroInt[3] && digitos[4] == contactos[5].numeroInt[4] && digitos[5] == contactos[5].numeroInt[5])
-        {
-            Debug.Log(contactos[5].nombre);
+        {          
+            bottomBarController2.PlayScene(gameController2.currentScene);
+            gameController2.inCall = true;
+            phoneUI.SetActive(false);
         }
     }
 }

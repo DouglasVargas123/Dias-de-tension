@@ -9,16 +9,22 @@ public class GameController2 : MonoBehaviour
     public Phone phone;
     public bool inCall = false;
 
+    private State state = State.IDLE;
+
+    private enum State
+    {
+        IDLE, ANIMATE
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && phone.inPhone)
         {
-            if (bottomBar.IsCompleted())
+            if (state == State.IDLE && bottomBar.IsCompleted())
             {
                 if (bottomBar.IsLastSentense())
                 {
-                    currentScene = currentScene.nextScene2;
-                    bottomBar.PlayScene(currentScene);
+                    PlayScene(currentScene.nextScene2);
                 }
                 else
                 {
@@ -27,6 +33,20 @@ public class GameController2 : MonoBehaviour
 
             }
         }
+    }
+
+    private void PlayScene(StoryScene2 scene2)
+    {
+        StartCoroutine(SwitchScene(scene2));
+    }
+
+    private IEnumerator SwitchScene(StoryScene2 scene2)
+    {
+        state = State.ANIMATE;
+        currentScene = scene2;
+        yield return new WaitForSeconds(1f);
+        bottomBar.PlayScene(scene2);
+        state = State.IDLE;
     }
 
 
