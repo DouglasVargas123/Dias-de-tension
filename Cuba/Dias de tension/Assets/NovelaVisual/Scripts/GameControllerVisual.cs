@@ -18,11 +18,11 @@ public class GameControllerVisual : MonoBehaviour
 
     private void Start()
     {
-        if(currentScene is StorySceneVisual)
+        Cursor.lockState = CursorLockMode.Locked;
+        if (currentScene is StorySceneVisual)
         {
             StorySceneVisual storyScene = currentScene as StorySceneVisual;
             bottomBar.PlayScene(storyScene);
-
         }
     }
 

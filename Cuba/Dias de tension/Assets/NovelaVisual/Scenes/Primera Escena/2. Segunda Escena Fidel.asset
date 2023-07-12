@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ba043c74469064391cb64ef50aa6ee, type: 3}
+  m_Name: 2. Segunda Escena Fidel
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Kennedy se atreve a amenazarnos con bloqueos navales y actos de agresi\xF3n.
+      Pero d\xE9jenme recordarles que nuestra Revoluci\xF3n ha resistido d\xE9cadas
+      de intentos de subversi\xF3n y asedio por parte de Estados Unidos."
+    speaker: {fileID: 11400000, guid: 504d5668412c22249b095373fd32edc9, type: 2}
+  - text: "Hemos demostrado nuestra valent\xEDa y determinaci\xF3n en la lucha por
+      la soberan\xEDa y la justicia social."
+    speaker: {fileID: 11400000, guid: 504d5668412c22249b095373fd32edc9, type: 2}
+  - text: "Cuba es una naci\xF3n soberana y no toleraremos ninguna violaci\xF3n a
+      nuestro territorio."
+    speaker: {fileID: 11400000, guid: 504d5668412c22249b095373fd32edc9, type: 2}
+  - text: "Estamos dispuestos a defender nuestra tierra, nuestra revoluci\xF3n y
+      nuestra independencia hasta el \xFAltimo aliento. No nos someteremos al yugo
+      del imperialismo estadounidense."
+    speaker: {fileID: 11400000, guid: 504d5668412c22249b095373fd32edc9, type: 2}
+  - text: "No nos rendiremos, no cederemos. Estamos preparados para cualquier eventualidad.
+      Cuba prevalecer\xE1, y la justicia y la solidaridad triunfar\xE1n sobre el
+      imperialismo y la opresi\xF3n."
+    speaker: {fileID: 11400000, guid: 504d5668412c22249b095373fd32edc9, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 20d503d19e27f384ea1857742c6ff39f, type: 2}

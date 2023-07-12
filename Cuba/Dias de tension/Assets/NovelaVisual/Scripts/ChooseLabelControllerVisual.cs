@@ -27,7 +27,7 @@ public class ChooseLabelControllerVisual : MonoBehaviour, IPointerClickHandler, 
     {
         scene = label.nextScene;
         textMesh.text = label.text;
-
+        this.controller = controller;
         Vector3 position = textMesh.rectTransform.localPosition;
         position.y = y;
         textMesh.rectTransform.localPosition = position;

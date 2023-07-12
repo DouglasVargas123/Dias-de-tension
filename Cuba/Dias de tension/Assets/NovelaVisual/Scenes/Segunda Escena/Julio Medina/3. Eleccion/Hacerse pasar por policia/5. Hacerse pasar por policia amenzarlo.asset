@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ba043c74469064391cb64ef50aa6ee, type: 3}
+  m_Name: 5. Hacerse pasar por policia amenzarlo
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: "Si no me apoya, entonces tendremos que llamar a su superior se\xF1or Medina,
+      ya que esto es m\xE1s importante de lo que usted cree."
+    speaker: {fileID: 11400000, guid: 97bb630d7a3bc6b49990c1906b9a60e5, type: 2}
+  - text: . . .
+    speaker: {fileID: 11400000, guid: 5aa9177552f5850409fa835b78dea749, type: 2}
+  - text: "\xBFQue ha pasado?"
+    speaker: {fileID: 11400000, guid: 5aa9177552f5850409fa835b78dea749, type: 2}
+  - text: "No hace mucho se supo de que alguien a estado dando informaci\xF3n clasificada
+      a agentes exteriores del pa\xEDs"
+    speaker: {fileID: 11400000, guid: 97bb630d7a3bc6b49990c1906b9a60e5, type: 2}
+  - text: "Y no hace mucho, supimos que 2 personas del personal sovi\xE9tico, salieron
+      en la noche a tomar y supimos que usted tambi\xE9n estaba ah\xED esa noche"
+    speaker: {fileID: 11400000, guid: 97bb630d7a3bc6b49990c1906b9a60e5, type: 2}
+  - text: "As\xED que nos gustar\xEDa saber si \xBFsabe algo al respecto?"
+    speaker: {fileID: 11400000, guid: 97bb630d7a3bc6b49990c1906b9a60e5, type: 2}
+  - text: "No se nada, no eran personas muy amigables, pero s\xED vi a Ernesto Molina
+      llevarse bien con uno de ellos."
+    speaker: {fileID: 11400000, guid: 5aa9177552f5850409fa835b78dea749, type: 2}
+  - text: Entiendo muchas gracias por su apoyo, cualquier cosa lo llamaremos otra
+      vez
+    speaker: {fileID: 11400000, guid: 97bb630d7a3bc6b49990c1906b9a60e5, type: 2}
+  - text: Esperamos que mantenga el silencio.
+    speaker: {fileID: 11400000, guid: 97bb630d7a3bc6b49990c1906b9a60e5, type: 2}
+  - text: 
+    speaker: {fileID: 11400000, guid: 616cd99fd41ba8c49ac897696969985b, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 2369c4148e07e974eb9251bf37a79116, type: 2}

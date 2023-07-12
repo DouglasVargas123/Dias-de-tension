@@ -21,6 +21,7 @@ public class ChooseControllerVisual : MonoBehaviour
     {
         DestroyLabels();
         animator.SetTrigger("Show");
+        Cursor.lockState = CursorLockMode.None;
 
         for (int index = 0; index < scene.labels.Count; index++)
         {
@@ -77,6 +78,7 @@ public class ChooseControllerVisual : MonoBehaviour
     {
         gameController.PlayScene(scene);
         animator.SetTrigger("Hide");
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }
 

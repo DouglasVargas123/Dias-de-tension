@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ba043c74469064391cb64ef50aa6ee, type: 3}
+  m_Name: 1. PrimeraEscena Kennedy
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: Buenas noches, ciudadanos estadounidenses. Les hablo hoy con un mensaje
+      de gran importancia y gravedad.
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: "Hace apenas unas horas, hemos descubierto evidencia incontrovertible de
+      que la Uni\xF3n Sovi\xE9tica ha instalado misiles nucleares en la isla de Cuba."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: "Esta acci\xF3n, inaceptable para Estados Unidos y una amenaza directa
+      a nuestra seguridad nacional, no ser\xE1 tolerada."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: "Perm\xEDtanme ser claro: cualquier ataque nuclear proveniente de Cuba
+      o iniciado por la Uni\xF3n Sovi\xE9tica desde suelo cubano, ser\xE1 considerado
+      un ataque contra los Estados Unidos."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: "En respuesta a esta provocaci\xF3n, he dado instrucciones para el bloqueo
+      naval de Cuba."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: "Nuestra marina interceptar\xE1 cualquier barco que intente llevar suministros
+      militares o equipos ofensivos a la isla."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: "Advierto al l\xEDder sovi\xE9tico, el Sr. Khrushchev, a que detenga de
+      inmediato esta amenaza. Le insto a que retire los misiles nucleares de Cuba
+      y ponga fin a esta peligrosa situaci\xF3n."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: "Entendemos que hay preocupaciones leg\xEDtimas de seguridad en la regi\xF3n,
+      pero esto no puede ser una excusa para poner en riesgo la paz mundial."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: "En \xFAltima instancia, lo que est\xE1 en juego aqu\xED no es solo la
+      soberan\xEDa de Cuba o la rivalidad entre nuestras dos naciones. Se trata del
+      futuro de la humanidad y la preservaci\xF3n de la paz mundial."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: "Debemos hacer todo lo posible para evitar un conflicto nuclear, y esto
+      requiere diplomacia, resoluci\xF3n y sabidur\xEDa."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: "En los pr\xF3ximos d\xEDas, mantendremos consultas con nuestros aliados
+      y buscaremos soluciones pac\xEDficas. Sin embargo, quiero dejar en claro que
+      estamos preparados para cualquier eventualidad."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  background: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: 736b1388faa8b38418daf5b2c4a732fd, type: 2}
