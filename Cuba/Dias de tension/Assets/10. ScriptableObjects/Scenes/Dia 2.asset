@@ -13,17 +13,26 @@ MonoBehaviour:
   m_Name: Dia 2
   m_EditorClassIdentifier: 
   sentences:
-  - text: Este es el segundo dia y hablar fidel castro
+  - text: "Kennedy se atreve a amenazarnos con bloqueos navales y actos de agresi\xF3n."
     speaker: {fileID: 11400000, guid: 504d5668412c22249b095373fd32edc9, type: 2}
-  - text: asdas
+  - text: "Pero d\xE9jenme recordarles que nuestra Revoluci\xF3n ha resistido d\xE9cadas
+      de intentos de subversi\xF3n y asedio por parte de Estados Unidos."
     speaker: {fileID: 11400000, guid: 504d5668412c22249b095373fd32edc9, type: 2}
-  - text: aca sigue hablando
+  - text: "Hemos demostrado nuestra valent\xEDa y determinaci\xF3n en la lucha por
+      la soberan\xEDa y la justicia social."
     speaker: {fileID: 11400000, guid: 504d5668412c22249b095373fd32edc9, type: 2}
-  - text: aca aparece un barco
-    speaker: {fileID: 11400000, guid: 480c1b0c832d0ea47abd64c67afd462a, type: 2}
-  - text: y ahora habla habla otra persona
-    speaker: {fileID: 11400000, guid: ea35ca57523791f4e912d405ac231ce6, type: 2}
-  - text: adsasd
-    speaker: {fileID: 11400000, guid: ff2746fed7e99a945b0a23108fda4c8a, type: 2}
+  - text: "Cuba es una naci\xF3n soberana y no toleraremos ninguna violaci\xF3n a
+      nuestro territorio."
+    speaker: {fileID: 11400000, guid: 504d5668412c22249b095373fd32edc9, type: 2}
+  - text: "Estamos dispuestos a defender nuestra tierra, nuestra revoluci\xF3n y
+      nuestra independencia hasta el \xFAltimo aliento."
+    speaker: {fileID: 11400000, guid: 504d5668412c22249b095373fd32edc9, type: 2}
+  - text: No nos someteremos al yugo del imperialismo estadounidense.
+    speaker: {fileID: 11400000, guid: 504d5668412c22249b095373fd32edc9, type: 2}
+  - text: No nos rendiremos, no cederemos.
+    speaker: {fileID: 11400000, guid: 504d5668412c22249b095373fd32edc9, type: 2}
+  - text: "Estamos preparados para cualquier eventualidad. Cuba prevalecer\xE1, y
+      la justicia y la solidaridad triunfar\xE1n sobre el imperialismo y la opresi\xF3n."
+    speaker: {fileID: 11400000, guid: 504d5668412c22249b095373fd32edc9, type: 2}
   background: {fileID: 21300000, guid: f0d62524182280d4c8bbb5be30fa3a97, type: 3}
-  nextScene: {fileID: 0}
+  nextScene: {fileID: 11400000, guid: b36608ca3fe6d0e4fb176c5c78990cfa, type: 2}

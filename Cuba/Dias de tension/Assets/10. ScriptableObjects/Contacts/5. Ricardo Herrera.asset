@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 053840f51f65146419b3f4f676040e12, type: 3}
   m_Name: 5. Ricardo Herrera
   m_EditorClassIdentifier: 
-  nombre: Ricardo Herrera
+  nombre: 
   textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 1}
-  numero: 815-135
+  numero: 
   numeroInt: 080000000100000005000000010000000300000005000000
+  Foto: {fileID: 0}

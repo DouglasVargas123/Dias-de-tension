@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 053840f51f65146419b3f4f676040e12, type: 3}
   m_Name: 7. Victoria Torres
   m_EditorClassIdentifier: 
-  nombre: Victoria Torres
+  nombre: 
   textColor: {r: 0.9254902, g: 0.06666667, b: 0.06666667, a: 1}
-  numero: 872-111
+  numero: 
   numeroInt: 080000000700000002000000010000000100000001000000
+  Foto: {fileID: 0}

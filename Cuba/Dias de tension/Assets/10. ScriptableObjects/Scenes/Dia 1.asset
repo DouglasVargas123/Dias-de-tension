@@ -22,15 +22,35 @@ MonoBehaviour:
   - text: "Esta acci\xF3n, inaceptable para Estados Unidos y una amenaza directa
       a nuestra seguridad nacional, no ser\xE1 tolerada."
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
-  - text: asdasdasd
+  - text: "Perm\xEDtanme ser claro: cualquier ataque nuclear proveniente de Cuba
+      o iniciado por la Uni\xF3n Sovi\xE9tica desde suelo cubano, ser\xE1 considerado
+      un ataque contra los Estados Unidos."
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
-  - text: asdasdasd
+  - text: "En respuesta a esta provocaci\xF3n, he dado instrucciones para el bloqueo
+      naval de Cuba."
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
-  - text: zzcxxxxxxxxxxxxxx
+  - text: "Nuestra marina interceptar\xE1 cualquier barco que intente llevar suministros
+      militares o equipos ofensivos a la isla."
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
-  - text: zzcxxxxxxxxxxxxxx
+  - text: "Advierto al l\xEDder sovi\xE9tico, el Sr. Khrushchev, a que detenga de
+      inmediato esta amenaza. Le insto a que retire los misiles nucleares de Cuba
+      y ponga fin a esta peligrosa situaci\xF3n."
     speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
-  - text: zzcxxxxxxxxxxxxxx
-    speaker: {fileID: 11400000, guid: 480c1b0c832d0ea47abd64c67afd462a, type: 2}
-  background: {fileID: 21300000, guid: d66ad759adff9f443b50778ee5a7af2a, type: 3}
+  - text: "Entendemos que hay preocupaciones leg\xEDtimas de seguridad en la regi\xF3n,
+      pero esto no puede ser una excusa para poner en riesgo la paz mundial."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: "En \xFAltima instancia, lo que est\xE1 en juego aqu\xED no es solo la
+      soberan\xEDa de Cuba o la rivalidad entre nuestras dos naciones."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: "Se trata del futuro de la humanidad y la preservaci\xF3n de la paz mundial.
+      Debemos hacer todo lo posible para evitar un conflicto nuclear, y esto requiere
+      diplomacia, resoluci\xF3n y sabidur\xEDa."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: "En los pr\xF3ximos d\xEDas, mantendremos consultas con nuestros aliados
+      y buscaremos soluciones pac\xEDficas."
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  - text: Sin embargo, quiero dejar en claro que estamos preparados para cualquier
+      eventualidad.
+    speaker: {fileID: 11400000, guid: 65d3c0f0974bb4546bfaed0b891180ec, type: 2}
+  background: {fileID: 0}
   nextScene: {fileID: 11400000, guid: 1e71858a1fc27bb4d86472e57b0948cf, type: 2}
